@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forca));
             this.lbl0 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
@@ -50,19 +51,29 @@
             this.btnObjeto = new System.Windows.Forms.Button();
             this.btnCarro = new System.Windows.Forms.Button();
             this.cbTemas = new System.Windows.Forms.GroupBox();
-            this.lblCabeca = new System.Windows.Forms.Label();
-            this.lblCorpo = new System.Windows.Forms.Label();
-            this.lblBracoE = new System.Windows.Forms.Label();
-            this.lblPernaD = new System.Windows.Forms.Label();
-            this.lblPernaE = new System.Windows.Forms.Label();
-            this.lblBracoD = new System.Windows.Forms.Label();
+            this.pbCabeca = new System.Windows.Forms.PictureBox();
+            this.pbTronco = new System.Windows.Forms.PictureBox();
+            this.pbBracoE = new System.Windows.Forms.PictureBox();
+            this.pbBracoD = new System.Windows.Forms.PictureBox();
+            this.pbPernaE = new System.Windows.Forms.PictureBox();
+            this.pbPernaD = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblDS = new System.Windows.Forms.Label();
             this.cbTemas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCabeca)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTronco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBracoE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBracoD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPernaE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPernaD)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl0
             // 
             this.lbl0.AutoSize = true;
-            this.lbl0.Location = new System.Drawing.Point(91, 226);
+            this.lbl0.Location = new System.Drawing.Point(267, 262);
             this.lbl0.Name = "lbl0";
             this.lbl0.Size = new System.Drawing.Size(22, 15);
             this.lbl0.TabIndex = 0;
@@ -72,7 +83,7 @@
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(119, 226);
+            this.lbl1.Location = new System.Drawing.Point(295, 262);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(22, 15);
             this.lbl1.TabIndex = 1;
@@ -82,7 +93,7 @@
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(147, 226);
+            this.lbl2.Location = new System.Drawing.Point(323, 262);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(22, 15);
             this.lbl2.TabIndex = 2;
@@ -92,7 +103,7 @@
             // lbl3
             // 
             this.lbl3.AutoSize = true;
-            this.lbl3.Location = new System.Drawing.Point(175, 226);
+            this.lbl3.Location = new System.Drawing.Point(351, 262);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(22, 15);
             this.lbl3.TabIndex = 3;
@@ -102,7 +113,7 @@
             // lbl4
             // 
             this.lbl4.AutoSize = true;
-            this.lbl4.Location = new System.Drawing.Point(203, 226);
+            this.lbl4.Location = new System.Drawing.Point(379, 262);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(22, 15);
             this.lbl4.TabIndex = 4;
@@ -112,7 +123,7 @@
             // lbl5
             // 
             this.lbl5.AutoSize = true;
-            this.lbl5.Location = new System.Drawing.Point(231, 226);
+            this.lbl5.Location = new System.Drawing.Point(407, 262);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(22, 15);
             this.lbl5.TabIndex = 5;
@@ -121,7 +132,7 @@
             // 
             // txtTentativa
             // 
-            this.txtTentativa.Location = new System.Drawing.Point(91, 311);
+            this.txtTentativa.Location = new System.Drawing.Point(267, 347);
             this.txtTentativa.MaxLength = 1;
             this.txtTentativa.Name = "txtTentativa";
             this.txtTentativa.Size = new System.Drawing.Size(103, 23);
@@ -129,7 +140,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(218, 311);
+            this.btnConfirmar.Location = new System.Drawing.Point(394, 347);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
             this.btnConfirmar.TabIndex = 7;
@@ -140,7 +151,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(231, 226);
+            this.label1.Location = new System.Drawing.Point(407, 262);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(22, 15);
             this.label1.TabIndex = 0;
@@ -150,7 +161,7 @@
             // lbl6
             // 
             this.lbl6.AutoSize = true;
-            this.lbl6.Location = new System.Drawing.Point(259, 226);
+            this.lbl6.Location = new System.Drawing.Point(435, 262);
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(22, 15);
             this.lbl6.TabIndex = 1;
@@ -160,7 +171,7 @@
             // lbl7
             // 
             this.lbl7.AutoSize = true;
-            this.lbl7.Location = new System.Drawing.Point(287, 226);
+            this.lbl7.Location = new System.Drawing.Point(463, 262);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(22, 15);
             this.lbl7.TabIndex = 2;
@@ -170,7 +181,7 @@
             // lbl8
             // 
             this.lbl8.AutoSize = true;
-            this.lbl8.Location = new System.Drawing.Point(315, 226);
+            this.lbl8.Location = new System.Drawing.Point(491, 262);
             this.lbl8.Name = "lbl8";
             this.lbl8.Size = new System.Drawing.Size(22, 15);
             this.lbl8.TabIndex = 3;
@@ -180,7 +191,7 @@
             // lbl9
             // 
             this.lbl9.AutoSize = true;
-            this.lbl9.Location = new System.Drawing.Point(343, 226);
+            this.lbl9.Location = new System.Drawing.Point(519, 262);
             this.lbl9.Name = "lbl9";
             this.lbl9.Size = new System.Drawing.Size(22, 15);
             this.lbl9.TabIndex = 4;
@@ -190,7 +201,7 @@
             // lbl10
             // 
             this.lbl10.AutoSize = true;
-            this.lbl10.Location = new System.Drawing.Point(371, 226);
+            this.lbl10.Location = new System.Drawing.Point(547, 262);
             this.lbl10.Name = "lbl10";
             this.lbl10.Size = new System.Drawing.Size(22, 15);
             this.lbl10.TabIndex = 5;
@@ -200,7 +211,7 @@
             // lbl11
             // 
             this.lbl11.AutoSize = true;
-            this.lbl11.Location = new System.Drawing.Point(399, 226);
+            this.lbl11.Location = new System.Drawing.Point(575, 262);
             this.lbl11.Name = "lbl11";
             this.lbl11.Size = new System.Drawing.Size(22, 15);
             this.lbl11.TabIndex = 5;
@@ -210,16 +221,16 @@
             // lblDica
             // 
             this.lblDica.AutoSize = true;
-            this.lblDica.Location = new System.Drawing.Point(91, 153);
+            this.lblDica.Location = new System.Drawing.Point(267, 189);
             this.lblDica.Name = "lblDica";
-            this.lblDica.Size = new System.Drawing.Size(83, 15);
+            this.lblDica.Size = new System.Drawing.Size(101, 15);
             this.lblDica.TabIndex = 9;
-            this.lblDica.Text = "A palavra tem:";
+            this.lblDica.Text = "Escolha um tema.";
             // 
             // lblErro
             // 
             this.lblErro.AutoSize = true;
-            this.lblErro.Location = new System.Drawing.Point(579, 69);
+            this.lblErro.Location = new System.Drawing.Point(463, 22);
             this.lblErro.Name = "lblErro";
             this.lblErro.Size = new System.Drawing.Size(36, 15);
             this.lblErro.TabIndex = 10;
@@ -228,7 +239,7 @@
             // txtErro
             // 
             this.txtErro.Enabled = false;
-            this.txtErro.Location = new System.Drawing.Point(548, 87);
+            this.txtErro.Location = new System.Drawing.Point(432, 40);
             this.txtErro.Name = "txtErro";
             this.txtErro.Size = new System.Drawing.Size(100, 23);
             this.txtErro.TabIndex = 11;
@@ -268,93 +279,129 @@
             this.cbTemas.Controls.Add(this.btnAnimal);
             this.cbTemas.Controls.Add(this.btnCarro);
             this.cbTemas.Controls.Add(this.btnObjeto);
-            this.cbTemas.Location = new System.Drawing.Point(548, 175);
+            this.cbTemas.Location = new System.Drawing.Point(558, 22);
             this.cbTemas.Name = "cbTemas";
             this.cbTemas.Size = new System.Drawing.Size(116, 119);
             this.cbTemas.TabIndex = 15;
             this.cbTemas.TabStop = false;
             this.cbTemas.Text = "Temas";
             // 
-            // lblCabeca
+            // pbCabeca
             // 
-            this.lblCabeca.AutoSize = true;
-            this.lblCabeca.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCabeca.Location = new System.Drawing.Point(55, 4);
-            this.lblCabeca.Name = "lblCabeca";
-            this.lblCabeca.Size = new System.Drawing.Size(37, 37);
-            this.lblCabeca.TabIndex = 16;
-            this.lblCabeca.Text = "O";
-            this.lblCabeca.Visible = false;
+            this.pbCabeca.Image = ((System.Drawing.Image)(resources.GetObject("pbCabeca.Image")));
+            this.pbCabeca.Location = new System.Drawing.Point(77, 56);
+            this.pbCabeca.Name = "pbCabeca";
+            this.pbCabeca.Size = new System.Drawing.Size(170, 66);
+            this.pbCabeca.TabIndex = 22;
+            this.pbCabeca.TabStop = false;
+            this.pbCabeca.Visible = false;
             // 
-            // lblCorpo
+            // pbTronco
             // 
-            this.lblCorpo.AutoSize = true;
-            this.lblCorpo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCorpo.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCorpo.Location = new System.Drawing.Point(58, 38);
-            this.lblCorpo.Name = "lblCorpo";
-            this.lblCorpo.Size = new System.Drawing.Size(28, 46);
-            this.lblCorpo.TabIndex = 17;
-            this.lblCorpo.Text = "|";
-            this.lblCorpo.Visible = false;
+            this.pbTronco.Image = ((System.Drawing.Image)(resources.GetObject("pbTronco.Image")));
+            this.pbTronco.Location = new System.Drawing.Point(77, 56);
+            this.pbTronco.Name = "pbTronco";
+            this.pbTronco.Size = new System.Drawing.Size(170, 182);
+            this.pbTronco.TabIndex = 23;
+            this.pbTronco.TabStop = false;
+            this.pbTronco.Visible = false;
             // 
-            // lblBracoE
+            // pbBracoE
             // 
-            this.lblBracoE.AutoSize = true;
-            this.lblBracoE.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBracoE.Location = new System.Drawing.Point(9, 20);
-            this.lblBracoE.Name = "lblBracoE";
-            this.lblBracoE.Size = new System.Drawing.Size(50, 37);
-            this.lblBracoE.TabIndex = 18;
-            this.lblBracoE.Text = "___";
-            this.lblBracoE.Visible = false;
+            this.pbBracoE.Image = ((System.Drawing.Image)(resources.GetObject("pbBracoE.Image")));
+            this.pbBracoE.Location = new System.Drawing.Point(77, 56);
+            this.pbBracoE.Name = "pbBracoE";
+            this.pbBracoE.Size = new System.Drawing.Size(174, 182);
+            this.pbBracoE.TabIndex = 24;
+            this.pbBracoE.TabStop = false;
+            this.pbBracoE.Visible = false;
             // 
-            // lblPernaD
+            // pbBracoD
             // 
-            this.lblPernaD.AutoSize = true;
-            this.lblPernaD.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPernaD.Location = new System.Drawing.Point(71, 84);
-            this.lblPernaD.Margin = new System.Windows.Forms.Padding(0);
-            this.lblPernaD.Name = "lblPernaD";
-            this.lblPernaD.Size = new System.Drawing.Size(27, 37);
-            this.lblPernaD.TabIndex = 20;
-            this.lblPernaD.Text = "\\";
-            this.lblPernaD.Visible = false;
+            this.pbBracoD.Image = ((System.Drawing.Image)(resources.GetObject("pbBracoD.Image")));
+            this.pbBracoD.Location = new System.Drawing.Point(77, 56);
+            this.pbBracoD.Name = "pbBracoD";
+            this.pbBracoD.Size = new System.Drawing.Size(174, 182);
+            this.pbBracoD.TabIndex = 25;
+            this.pbBracoD.TabStop = false;
+            this.pbBracoD.Visible = false;
             // 
-            // lblPernaE
+            // pbPernaE
             // 
-            this.lblPernaE.AutoSize = true;
-            this.lblPernaE.BackColor = System.Drawing.Color.Transparent;
-            this.lblPernaE.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPernaE.Location = new System.Drawing.Point(40, 84);
-            this.lblPernaE.Name = "lblPernaE";
-            this.lblPernaE.Size = new System.Drawing.Size(28, 37);
-            this.lblPernaE.TabIndex = 21;
-            this.lblPernaE.Text = "/";
-            this.lblPernaE.Visible = false;
+            this.pbPernaE.Image = ((System.Drawing.Image)(resources.GetObject("pbPernaE.Image")));
+            this.pbPernaE.Location = new System.Drawing.Point(77, 56);
+            this.pbPernaE.Name = "pbPernaE";
+            this.pbPernaE.Size = new System.Drawing.Size(174, 241);
+            this.pbPernaE.TabIndex = 26;
+            this.pbPernaE.TabStop = false;
+            this.pbPernaE.Visible = false;
             // 
-            // lblBracoD
+            // pbPernaD
             // 
-            this.lblBracoD.AutoSize = true;
-            this.lblBracoD.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBracoD.Location = new System.Drawing.Point(91, 20);
-            this.lblBracoD.Name = "lblBracoD";
-            this.lblBracoD.Size = new System.Drawing.Size(50, 37);
-            this.lblBracoD.TabIndex = 18;
-            this.lblBracoD.Text = "___";
-            this.lblBracoD.Visible = false;
+            this.pbPernaD.Image = ((System.Drawing.Image)(resources.GetObject("pbPernaD.Image")));
+            this.pbPernaD.Location = new System.Drawing.Point(77, 56);
+            this.pbPernaD.Name = "pbPernaD";
+            this.pbPernaD.Size = new System.Drawing.Size(174, 244);
+            this.pbPernaD.TabIndex = 27;
+            this.pbPernaD.TabStop = false;
+            this.pbPernaD.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(12, 201);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 125);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "|";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(12, 113);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 125);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "|";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(12, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 125);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "|";
+            // 
+            // lblDS
+            // 
+            this.lblDS.AutoSize = true;
+            this.lblDS.Font = new System.Drawing.Font("Segoe UI", 70F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDS.Location = new System.Drawing.Point(27, -72);
+            this.lblDS.Name = "lblDS";
+            this.lblDS.Size = new System.Drawing.Size(170, 125);
+            this.lblDS.TabIndex = 31;
+            this.lblDS.Text = "___";
             // 
             // Forca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(715, 400);
-            this.Controls.Add(this.lblPernaE);
-            this.Controls.Add(this.lblPernaD);
-            this.Controls.Add(this.lblBracoD);
-            this.Controls.Add(this.lblBracoE);
-            this.Controls.Add(this.lblCorpo);
-            this.Controls.Add(this.lblCabeca);
+            this.Controls.Add(this.lblDS);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pbPernaD);
+            this.Controls.Add(this.pbPernaE);
+            this.Controls.Add(this.pbBracoD);
+            this.Controls.Add(this.pbBracoE);
+            this.Controls.Add(this.pbTronco);
+            this.Controls.Add(this.pbCabeca);
             this.Controls.Add(this.cbTemas);
             this.Controls.Add(this.txtErro);
             this.Controls.Add(this.lblErro);
@@ -377,6 +424,12 @@
             this.Name = "Forca";
             this.Text = "Forca";
             this.cbTemas.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbCabeca)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTronco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBracoE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBracoD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPernaE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPernaD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,11 +459,15 @@
         private Button btnObjeto;
         private Button btnCarro;
         private GroupBox cbTemas;
-        private Label lblCabeca;
-        private Label lblCorpo;
-        private Label lblBracoE;
-        private Label lblPernaD;
-        private Label lblPernaE;
-        private Label lblBracoD;
+        private PictureBox pbCabeca;
+        private PictureBox pbTronco;
+        private PictureBox pbBracoE;
+        private PictureBox pbBracoD;
+        private PictureBox pbPernaE;
+        private PictureBox pbPernaD;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label lblDS;
     }
 }

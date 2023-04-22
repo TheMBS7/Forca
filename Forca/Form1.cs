@@ -7,14 +7,18 @@ namespace Forca
         private int ContErros;
         private char[] VetorPalavra = default!;
         private Label[] Labels;
-        private Label[] Corpo;
+        private int Anterior;
+
+        private PictureBox[] Corpo;
 
         public Forca()
         {
             InitializeComponent();
-
+            btnConfirmar.Enabled = false;
+            Anterior = 0;
             ContErros = 0;
-            Corpo = new Label[6] { lblCabeca, lblCorpo, lblBracoE, lblBracoD, lblPernaE, lblPernaD };
+
+            Corpo = new PictureBox[6] { pbCabeca, pbTronco, pbBracoE, pbBracoD, pbPernaE, pbPernaD };
             Labels = new Label[12] { lbl0, lbl1, lbl2, lbl3, lbl4, lbl5, lbl6, lbl7, lbl8, lbl9, lbl10, lbl11 };
         }
 
@@ -33,12 +37,15 @@ namespace Forca
             string palavra = banco[posicao];
             VetorPalavra = palavra.ToCharArray();
             Tamanho();
+            btnConfirmar.Enabled = true;
         }
 
         public void Reset()
         {
             ContErros = 0;
             txtErro.Text = "";
+            lblDica.Text = "Escolha um tema.";
+            btnConfirmar.Enabled = false;
             for (int X = 0; X < Corpo.Length; X++)
             {
                 Corpo[X].Visible = false;
@@ -73,13 +80,15 @@ namespace Forca
             }
             if (Achou == false)
             {
-                if (txtErro.Text.Contains(txtTentativa.Text))
+                if (txtErro.Text.Contains(txtTentativa.Text.ToUpper()))
                 {
                     MessageBox.Show("Essa letra já foi!");
                 }
                 else
                 {
+                    Corpo[Anterior].Visible = false;
                     Corpo[ContErros].Visible = true;
+                    Anterior = ContErros;
                     ContErros++;
                     string palavraAnterior = txtTentativa.Text + "-";
                     txtErro.Text += palavraAnterior.ToUpper();
